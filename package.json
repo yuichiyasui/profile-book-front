@@ -7,7 +7,9 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css,scss}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css,scss}'",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "next": "12.0.4",
@@ -20,11 +22,22 @@
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
     "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.1.2",
     "modern-css-reset": "^1.4.0",
     "prettier": "^2.4.1",
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^24.0.0",
     "typescript": "4.5.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "npm run lint:fix",
+      "npm run format"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix"
+    ]
   }
 }
