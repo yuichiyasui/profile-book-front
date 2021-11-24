@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from 'src/components/page/top/Top.module.scss';
+import styles from './Top.module.scss';
 
 export const Top = () => {
   return (
