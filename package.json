@@ -9,7 +9,8 @@
     "lint:fix": "next lint --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css,scss}'",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "commit": "cz"
   },
   "dependencies": {
     "next": "12.0.4",
@@ -19,6 +20,8 @@
   "devDependencies": {
     "@types/node": "16.11.9",
     "@types/react": "17.0.35",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
     "eslint-config-prettier": "^8.3.0",
@@ -39,5 +42,10 @@
     "*.{css,scss}": [
       "stylelint --fix"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
