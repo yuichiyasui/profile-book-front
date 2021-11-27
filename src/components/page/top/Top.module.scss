@@ -1,0 +1,39 @@
+.header {
+  background-color: #999;
+  padding: 10px;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mainvisual {
+  display: table;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 18px;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.to-login-button {
+  display: block;
+  margin: 0 auto;
+}
