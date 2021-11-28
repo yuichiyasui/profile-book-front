@@ -1,0 +1,20 @@
+.header {
+  background-color: #999;
+  padding: 10px;
+}
+
+@mixin base-header-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header-title {
+  @include base-header-title();
+}
+
+.header-title-link {
+  @include base-header-title();
+
+  text-decoration: none;
+  color: #000;
+}
