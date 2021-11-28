@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/Link';
 
 import styles from './Top.module.scss';
+
+import { Header } from 'src/components/ui/Header';
 
 export const Top = () => {
   return (
@@ -9,9 +12,8 @@ export const Top = () => {
       <Head>
         <title key="title">Top | Profile Book</title>
       </Head>
-      <header className={styles.header}>
-        <p className={styles['header-title']}>Profile Book</p>
-      </header>
+
+      <Header />
       <main>
         <div className={styles.container}>
           <div className={styles.mainvisual}>
@@ -29,8 +31,9 @@ export const Top = () => {
             メンバーのことを知ってみよう！
           </p>
         </div>
-        {/* TODO: ログイン画面作成後Linkに変更する */}
-        <button className={styles['to-login-button']}>ログインする</button>
+        <Link href="/login">
+          <a className={styles['to-login-button']}>ログインする</a>
+        </Link>
       </main>
     </>
   );
