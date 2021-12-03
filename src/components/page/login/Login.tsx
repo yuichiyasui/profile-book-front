@@ -4,6 +4,7 @@ import styles from './Login.module.scss';
 
 import { Header } from 'src/components/ui/Header';
 import { FormEvent } from 'react';
+import Link from 'next/Link';
 
 export const Login = () => {
   const login = (e: FormEvent) => {
@@ -37,6 +38,9 @@ export const Login = () => {
               </div>
               <button>ログイン</button>
             </form>
+            <Link href="/user-registration">
+              <a>ユーザー登録</a>
+            </Link>
           </section>
         </div>
       </main>
