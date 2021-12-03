@@ -1,5 +1,12 @@
+@import '@variables';
+
 .container {
-  width: 1280px;
+  @include mq('sm') {
+    width: 92vw;
+    margin: 0 4vw;
+  }
+
+  max-width: 1280px;
   margin: 0 auto;
   padding: 20px;
 }
