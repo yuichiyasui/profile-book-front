@@ -26,9 +26,9 @@ export const Top = () => {
           </div>
           <h1 className={styles.title}>Profile Book</h1>
           <p className={styles.description}>
-            自分をシェアしよう！
+            自分をシェアしよう
             <br />
-            メンバーのことを知ってみよう！
+            メンバーのことを知ってみよう
           </p>
         </div>
         <Link href="/login">

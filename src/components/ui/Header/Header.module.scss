@@ -1,11 +1,13 @@
 .header {
-  background-color: #999;
+  background-color: var(--color-deep-blue);
   padding: 10px;
+  box-shadow: 0 2px 4px var(--color-shadow);
 }
 
 @mixin base-header-title {
   font-size: 20px;
   font-weight: 700;
+  color: var(--color-white);
 }
 
 .header-title {
@@ -16,5 +18,4 @@
   @include base-header-title();
 
   text-decoration: none;
-  color: #000;
 }
