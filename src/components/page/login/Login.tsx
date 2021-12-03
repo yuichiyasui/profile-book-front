@@ -1,15 +1,19 @@
+import { FormEvent } from 'react';
 import Head from 'next/head';
+import Link from 'next/Link';
+import { useRouter } from 'next/router';
 
 import styles from './Login.module.scss';
 
 import { Header } from 'src/components/ui/Header';
-import { FormEvent } from 'react';
-import Link from 'next/Link';
 
 export const Login = () => {
+  const router = useRouter();
+
   const login = (e: FormEvent) => {
     e.preventDefault();
     alert('ログインしました。');
+    router.push('/members');
   };
 
   return (
