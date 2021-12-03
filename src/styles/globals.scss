@@ -1,1 +1,12 @@
 /** グローバルなCSSの設定を記載 */
+:root {
+  --color-light-gray: #eee;
+  --color-deep-blue: #0d47a1;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-shadow: #00000030;
+}
+
+html {
+  background-color: var(--color-light-gray);
+}
