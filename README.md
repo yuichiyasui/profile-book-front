@@ -4,6 +4,7 @@
 
 ## バージョン情報
 
+- Node.js 16.12.3
 - TypeScript 4.5.2
 - Next.js 12.0.4
 
@@ -11,7 +12,7 @@
 
 ### Node.js のバージョン管理
 
-準備中
+asdf
 
 ### GraphQL Client
 
@@ -21,6 +22,17 @@
 
 - ESLint
 - stylelint
+
+## 環境構築手順
+
+1. asdf をインストールする
+   http://asdf-vm.com/guide/getting-started.html
+
+2. `.tool-versions` で指定されたバージョンの Node.js をインストールする
+
+```
+asdf install
+```
 
 ## 関連リポジトリ
 
