@@ -30,7 +30,7 @@
     "lint-staged": "^12.1.2",
     "modern-css-reset": "^1.4.0",
     "prettier": "^2.4.1",
-    "stylelint": "^14.1.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^24.0.0",
     "typescript": "4.5.2"
